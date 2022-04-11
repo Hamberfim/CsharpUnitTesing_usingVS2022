@@ -1,1 +1,3 @@
 ### C# Unit Tesing using VS 2022
+
+Xunit, Fluent Assertions, FakeItEasy...
