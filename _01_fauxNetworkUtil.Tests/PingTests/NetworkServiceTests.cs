@@ -11,15 +11,27 @@ namespace _01_fauxNetworkUtil.Tests.PingTests
 {
     public class NetworkServiceTests
     {
+        private readonly NetworkService _pingService;
+        private readonly NetworkService _pingTimeOutService;
+
+        // ctor constructor
+        public NetworkServiceTests()
+        {
+            // SUT
+            _pingService = new NetworkService();
+            _pingTimeOutService = new NetworkService();
+        }
+
+        
         // be mindful of naming conventions -  ClassName_MethodName_ExpectedResult
         [Fact]
         public void NetworkService_SendPing_ReturnString()
         {
             // Arrange - get variables, classes, mocks, etc.
-            var pingService = new NetworkService();
-
+            // var pingService = new NetworkService();  moved to constructor
+            
             // Act - call the method - execute
-            var result = pingService.SendPing();
+            var result = _pingService.SendPing();
 
             // Assert
             result.Should().NotBeNullOrEmpty();
@@ -34,10 +46,10 @@ namespace _01_fauxNetworkUtil.Tests.PingTests
         public void NetworkService_PingTimeOut_ReturnInt(int a, int b, int expected)
         {
             // Arrange - get variables, classes, mocks, etc.
-            var pingTimeOutService = new NetworkService();
+            // var pingTimeOutService = new NetworkService(); moved to constructor
 
             // Act - call the method - execute
-            var result = pingTimeOutService.PingTimeOut(a, b);
+            var result = _pingTimeOutService.PingTimeOut(a, b);
 
             // Assert
             result.Should().Be(expected);  // [InlineData(1, 1, 2)]  // int a, int b, int expected
