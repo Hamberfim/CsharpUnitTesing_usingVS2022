@@ -1,5 +1,6 @@
 ﻿using _01_fauxNetworkUtil.Ping;
 using FluentAssertions;
+using FluentAssertions.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,6 +56,22 @@ namespace _01_fauxNetworkUtil.Tests.PingTests
             result.Should().Be(expected);  // [InlineData(1, 1, 2)]  // int a, int b, int expected
             result.Should().BeGreaterThanOrEqualTo(2);  // [InlineData(2, 2, 4)]  // int a, int b, int expected
             result.Should().NotBeInRange(-1000, 0);  // must be above zero
+
+        }
+
+
+        [Fact]
+        public void NetworkService_LastPingDate_ReturnDate()
+        {
+            // Arrange - get variables, classes, mocks, etc.
+            // var pingService = new NetworkService();  moved to constructor
+
+            // Act - call the method - execute
+            var result = _pingService.LastPingDate();
+
+            // Assert
+            result.Should().BeAfter(1.January(2010));
+            result.Should().BeBefore(1.January(2030));            
 
         }
 

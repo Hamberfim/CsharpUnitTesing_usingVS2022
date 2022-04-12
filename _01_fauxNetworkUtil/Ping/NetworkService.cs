@@ -20,5 +20,11 @@ namespace _01_fauxNetworkUtil.Ping
         {
             return a + b;
         }
+
+        public DateTime LastPingDate()
+        {
+            return DateTime.Now;
+        }
+
     }
 }
