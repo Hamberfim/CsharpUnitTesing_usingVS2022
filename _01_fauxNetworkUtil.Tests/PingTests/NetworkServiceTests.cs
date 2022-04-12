@@ -42,7 +42,7 @@ namespace _01_fauxNetworkUtil.Tests.PingTests
             // Assert
             result.Should().Be(expected);  // [InlineData(1, 1, 2)]  // int a, int b, int expected
             result.Should().BeGreaterThanOrEqualTo(2);  // [InlineData(2, 2, 4)]  // int a, int b, int expected
-            result.Should().NotBeInRange(-1000, 0);  // must be abouve zero
+            result.Should().NotBeInRange(-1000, 0);  // must be above zero
 
         }
 
