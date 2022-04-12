@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_00_UnitTestProofConcept", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_fauxNetworkUtil", "..\_01_fauxNetworkUtil\_01_fauxNetworkUtil.csproj", "{61642B4D-5379-486E-A393-8FD6E9D553E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_fauxNetworkUtil.Tests", "..\_01_fauxNetworkUtil.Tests\_01_fauxNetworkUtil.Tests.csproj", "{2C0CFEB4-C1FF-45F3-B6F0-9B351034A4B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{61642B4D-5379-486E-A393-8FD6E9D553E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61642B4D-5379-486E-A393-8FD6E9D553E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61642B4D-5379-486E-A393-8FD6E9D553E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0CFEB4-C1FF-45F3-B6F0-9B351034A4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0CFEB4-C1FF-45F3-B6F0-9B351034A4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0CFEB4-C1FF-45F3-B6F0-9B351034A4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0CFEB4-C1FF-45F3-B6F0-9B351034A4B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
