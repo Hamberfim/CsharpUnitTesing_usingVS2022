@@ -15,5 +15,10 @@ namespace _01_fauxNetworkUtil.Ping
             // BuildPacket();
             return "Success: Ping Sent!";
         }
+
+        public int PingTimeOut(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
