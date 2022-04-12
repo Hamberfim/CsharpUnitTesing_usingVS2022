@@ -8,6 +8,12 @@ namespace _01_fauxNetworkUtil.Ping
 {
     public class NetworkService
     {
-        
+        public string SendPing()
+        {
+            // Assumed functions
+            // SearchDNS();
+            // BuildPacket();
+            return "Success: Ping Sent!";
+        }
     }
 }
